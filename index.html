@@ -3,42 +3,61 @@
     <head>
         <meta charset="UTF-8">
         <title>test</title>
-        <link rel="stylesheet" type="text/css" href="./common.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/global-nav.css">
+        <link rel="stylesheet" type="text/css" href="/css/common.css">
     </head>
     <body> 
-        <header>
+        <header class="global-nav">
             <div class="global-nav-left">
-                <p>私の簡単レシピ</p>
+                <p>ポートフォリオ</p>
             </div>
-            <div class="global-nav-right">
-                <div class="openbtn"><div class="openbtn-area"><span></span><span></span><span></span></div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <!-- <div class="global-nav-right"> -->
+                <div class="openbtn"><span></span><span></span><span></span></div>
+                    <nav id="g-nav">
+                        <div id="g-nav-list">
+                            <ul>
+                                <li class="underline"><a href="">Top</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Works</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="circle-bg"></div>
+                </div>
+            <!-- </div> -->
+        </header>
+
+        <header class="global-left">
+            
+        </header>
+
+        <header class="globalright">
+            
+        </header>
+        <!-- <header class="sns_box flex">
+            <div class="sns_button twitter">
+                <a href="###" title="Twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="sns_button twitter">
+                <a href="###" title="Twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="sns_button twitter">
+                <a href="###" title="Twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+        </header> -->
+        <main>
+            <div class="content">
+                <div class="box_area">
+                    <div class="box">
+    
+                    </div>
                 </div>
             </div>
-        </header>
-
-        <header class="sns_box flex">
-            <div class="sns_button twitter">
-                <a href="###" title="Twitter"><i class="fa fa-twitter"></i></a>
-            </div>
-            <div class="sns_button twitter">
-                <a href="###" title="Twitter"><i class="fa fa-twitter"></i></a>
-            </div>
-            <div class="sns_button twitter">
-                <a href="###" title="Twitter"><i class="fa fa-twitter"></i></a>
-            </div>
-        </header>
-
-        <header>
-            
-        </header>
-
-        <main>
-            
         </main>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/global-nav.js"></script>
     </body>
     
 </html>
