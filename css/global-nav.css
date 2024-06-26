@@ -171,3 +171,7 @@ opacity: 1;
     transform: translateY(-6px) rotate(45deg);
     width: 30%;
 }
+
+header{
+    z-index: 999;
+}

@@ -40,7 +40,7 @@ body{
 .content{
     height: fit-content;
 }
-.box_area{
+.main_box_area{
     /* position: absolute; */
     align-items: center;
     flex: none;
@@ -53,8 +53,17 @@ body{
     height: 100vh;
     max-width: 100%;
 }
-.box{
+.main_box{
     background-color: #6db0e6;
     width: 100%;
     height: 100%;
+}
+/* Add numbers to pagination buttons by CSS */
+.splide__pagination {
+  counter-reset: pagination-num;
+}
+
+.splide__pagination__page:before {
+  counter-increment: pagination-num;
+  content: counter( pagination-num );
 }
