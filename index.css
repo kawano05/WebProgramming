@@ -13,11 +13,13 @@
     padding: 72px;
     height: 100vh;
     max-width: 100%;
+    cursor: default;
 }
 .main_box{
     background-color: #6db0e6;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 .main_box_area .two{
     background-color:#6d95e9;

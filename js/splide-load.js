@@ -1,6 +1,6 @@
 var splide = new Splide( '.splide',{
-    type: 'loop',
-    speed: 2000,
+    type: 'slide',
+    speed: 1000,
     arrows: false,
     pagination: true,
     isNavigation: true,
@@ -8,8 +8,10 @@ var splide = new Splide( '.splide',{
     resetProgress: false,
     // interval: 4000,
     direction: 'ttb',
-    wheelSleep: 1000,
+    wheelSleep: 500,
     height:'100vh' ,
+    wheel       : true,
+    releaseWheel: true,
 } )
 splide.on( 'pagination:mounted', function ( data ) {
     // ULエレメントにクラスを追加できます
