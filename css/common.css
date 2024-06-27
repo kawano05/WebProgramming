@@ -37,33 +37,3 @@ ul,var,video{
 body{
     margin: 0;
 }
-.content{
-    height: fit-content;
-}
-.main_box_area{
-    /* position: absolute; */
-    align-items: center;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    margin: 0px;
-    background-color: #FBFBFB;
-    padding: 72px;
-    height: 100vh;
-    max-width: 100%;
-}
-.main_box{
-    background-color: #6db0e6;
-    width: 100%;
-    height: 100%;
-}
-/* Add numbers to pagination buttons by CSS */
-.splide__pagination {
-  counter-reset: pagination-num;
-}
-
-.splide__pagination__page:before {
-  counter-increment: pagination-num;
-  content: counter( pagination-num );
-}

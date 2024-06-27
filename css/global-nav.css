@@ -175,3 +175,20 @@ opacity: 1;
 header{
     z-index: 999;
 }
+
+.global-left{
+    position: fixed;
+    writing-mode: tb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 24px;
+}
+.global-left div{
+    display: inline-block;
+    margin: 26px;
+}
+.global-left div p{
+    color: #3f3f3f;
+}

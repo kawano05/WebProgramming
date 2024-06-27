@@ -1,0 +1,122 @@
+.content{
+    height: fit-content;
+}
+.main_box_area{
+    /* position: absolute; */
+    align-items: center;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 0px;
+    background-color: #FBFBFB;
+    padding: 72px;
+    height: 100vh;
+    max-width: 100%;
+}
+.main_box{
+    background-color: #6db0e6;
+    width: 100%;
+    height: 100%;
+}
+.main_box_area .two{
+    background-color:#6d95e9;
+}
+
+.main_box_area .three{
+    background-color:#6d95e9;
+}
+h2{
+    position:absolute;
+    bottom: 20px;
+    color: white;
+    font-size: 13rem;
+}
+.main_box_area .two h2{
+    color: white;
+}
+
+/* Add numbers to pagination buttons by CSS */
+.splide__pagination {
+  counter-reset: pagination-num;
+  font-size: 30px;
+  width: 50px;
+}
+
+.splide__pagination__page{
+    font-size: 24px;
+    width: 20px;
+    height: 20px;
+    background:none;
+    margin-bottom: 40px;
+}
+.splide__pagination:last-child{
+    margin-bottom: 0px;
+}
+.splide__pagination__page .is-active{
+    height: 40px;
+}
+
+/* .splide__pagination__page:before {
+  counter-increment: pagination-num;
+  content: counter( pagination-num );
+} */
+ 
+.scrolldown4{
+    /*描画位置※位置は適宜調整してください*/
+    z-index: 998;
+	position:absolute;
+	bottom:1%;
+	right:50%;
+    /*矢印の動き1秒かけて永遠にループ*/
+	animation: arrowmove 2s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+      0%{bottom:0%;}
+      50%{bottom:2%;}
+     100%{bottom:0%;}
+ }
+
+/*Scrollテキストの描写*/
+.scrolldown4 span{
+    /*描画位置*/
+	position: absolute;
+	left:-20px;
+	bottom:10px;
+    /*テキストの形状*/
+	color: #666;
+	font-size: 0.7rem;
+	letter-spacing: 0.05em;
+	/*縦書き設定*/
+	-ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 20px;
+    background: #666;
+    transform: skewX(-31deg);
+}
+
+.scrolldown4:after{
+	content:"";
+    /*描画位置*/
+	position: absolute;
+	bottom:0;
+	right:0;
+    /*矢印の形状*/
+	width:1px;
+	height: 50px;
+	background:#666;
+}

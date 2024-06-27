@@ -2,7 +2,7 @@ var splide = new Splide( '.splide',{
     type: 'loop',
     speed: 2000,
     arrows: false,
-    pagination: false,
+    pagination: true,
     isNavigation: true,
     // autoplay: true,
     resetProgress: false,
