@@ -37,39 +37,63 @@
                 <p>製作物の紹介</p>
             </div>
         </header>
-        <main>
+        <main class="Container">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                <!-- 1つめ -->
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="ホームのURL">
+                        <span itemprop="name">ホーム</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                
+                <!-- 2つめ -->
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="カテゴリーのURL">
+                        <span itemprop="name">カテゴリー名</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>    
+            </ol>
             <section class="mv">
-    
+                <div class="text">
+                    <h1>Works</h1>
+                    <h2>作品一覧</h2>
+                </div>
+                
+                <div >
+                    <span>2024</span>
+                    <span>2023</span>
+                    <span>2022</span>
+                    <span>2021</span>
+                </div>
             </section>
             <section>
-                <ul class="timeline">
-                    <li>
-                        <dl>
-                            <dt>2000</dt>
-                            <dd>内容</dd>
-                        </dl>
-                        <img src="path/to/image.jpg" alt="作品の説明" class="timeline-image">
-    
-                        <span class="border-line"></span>
-                        <button class="popup-trigger">詳細を見る</button>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>2000</dt>
-                            <dd>内容</dd>
-                        </dl>
-                        <img src="path/to/image.jpg" alt="作品の説明" class="timeline-image">
-    
-                        <span class="border-line"></span>
-                    </li>
-                </ul>
-                <div id="popup-overlay" class="popup-overlay">
-                    <div class="popup-content">
-                        <span class="close-popup">&times;</span>
-                        <h2 id="popup-title"></h2>
-                        <img id="popup-image" src="" alt="">
-                        <p id="popup-description"></p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            
+                            <div class="content-wrapper">
+                                <h2>2022年</h2>
+                                <h3>作品A</h3>
+                                <p>作品Aの説明文がここに入ります。詳細な情報や特徴について記述できます。</p>
+                            </div>
+                            <div class="background-image" style="background-image: url('path/to/workA-image.jpg');"></div>
+                        </div>
                     </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="content-wrapper">
+                                <h2>2023年</h2>
+                                <h3>作品B</h3>
+                                <p>作品Bの説明文がここに入ります。詳細な情報や特徴について記述できます。</p>
+                            </div>
+                            <div class="background-image" style="background-image: url('path/to/workB-image.jpg');"></div>
+                        </div>
+                    </div>
+                    <!-- 他の作品項目を追加 -->
                 </div>
             </section>
         </main>
