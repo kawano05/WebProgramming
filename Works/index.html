@@ -13,6 +13,7 @@
 <body>
     <div id="page-container">
         <header class="global-nav">
+            <div class="emp"></div>
             <div class="global-nav-left">
                 <p>ポートフォリオ</p>
             </div>
@@ -38,25 +39,31 @@
             </div>
         </header>
         <main class="Container">
-            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-                <!-- 1つめ -->
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
-                    <a itemprop="item" href="ホームのURL">
-                        <span itemprop="name">ホーム</span>
-                    </a>
-                    <meta itemprop="position" content="1" />
+                  <a itemprop="item" href="ホームのURL">
+                      <span itemprop="name">ホーム</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
                 </li>
-                
-                <!-- 2つめ -->
+              
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
-                    <a itemprop="item" href="カテゴリーのURL">
-                        <span itemprop="name">カテゴリー名</span>
-                    </a>
-                    <meta itemprop="position" content="2" />
-                </li>    
-            </ol>
+                  <a itemprop="item" href="カテゴリー1のURL">
+                      <span itemprop="name">カテゴリー1</span>
+                  </a>
+                  <meta itemprop="position" content="2" />
+                </li>
+              
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="カテゴリー2のURL">
+                      <span itemprop="name">カテゴリー2</span>
+                  </a>
+                  <meta itemprop="position" content="3" />
+                </li>
+              </ol>
             <section class="mv">
                 <div class="text">
                     <h1>Works</h1>
@@ -70,31 +77,128 @@
                     <span>2021</span>
                 </div>
             </section>
-            <section>
+            <section class="timeline_sec">
+                
+                <h2 class="year">2024年</h2>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-content">
-                            
                             <div class="content-wrapper">
-                                <h2>2022年</h2>
-                                <h3>作品A</h3>
+                                <h2>3月</h2>
+                                <h3>食育真剣衰弱</h3>
                                 <p>作品Aの説明文がここに入ります。詳細な情報や特徴について記述できます。</p>
+                                <img class="content-img" src="" alt="">
                             </div>
-                            <div class="background-image" style="background-image: url('path/to/workA-image.jpg');"></div>
+                            
+                            <!-- <div class="image-wrapper">
+                                <img class="content-img" src="image1.jpg" alt="Image 1">
+                                <img class="content-img" src="image2.jpg" alt="Image 2">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <h2 class="year">2023年</h2>
+                <div class="timeline">
+                    <span></span>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <!-- <div class="image-wrapper">
+                                <img class="content-img" src="image3.jpg" alt="Image 3">
+                                <img class="content-img" src="image4.jpg" alt="Image 4">
+                              </div> -->
+                            <div class="content-wrapper">
+                                <h2>8月</h2>
+                                <h3>食育ゲーム</h3>
+                                <p>作品Bの説明文がここに入ります。詳細な情報や特徴について記述できます。</p>
+                                <img class="content-img" src="" alt="">
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <div class="content-wrapper">
-                                <h2>2023年</h2>
-                                <h3>作品B</h3>
+                                <h2>8月</h2>
+                                <h3>食育ゲーム</h3>
                                 <p>作品Bの説明文がここに入ります。詳細な情報や特徴について記述できます。</p>
                             </div>
-                            <div class="background-image" style="background-image: url('path/to/workB-image.jpg');"></div>
+                            <img class="content-img" src="" alt="">
                         </div>
                     </div>
-                    <!-- 他の作品項目を追加 -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="content-wrapper">
+                                <h2>2月</h2>
+                                <h3>架空の企業のHP<br>「KKK」</h3>
+                                <p>作品Bの説明文がここに入ります。詳細な情報や特徴について記述できます。</p>
+                            </div>
+                            <img class="content-img" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="content-wrapper">
+                                <h2>1月</h2>
+                                <h3>ライントレースカー</h3>
+                                <p>作品Bの説明文がここに入ります。詳細な情報や特徴について記述できます。</p>
+                            </div>
+                            <img class="content-img" src="" alt="">
+                        </div>
+                    </div>
                 </div>
+
+                <h2 class="year">2022年</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="content-wrapper">
+                                <h3>モールス信号学習アプリ</h3>
+                                <p>作品Aの説明文がここに入ります。詳細な情報や特徴について記述できます。</p>
+                                
+                            </div>
+                            <img class="content-img" src="" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="content-wrapper">
+                                <h3>WindowsFormApp群</h3>
+                                <p>作品Aの説明文がここに入ります。詳細な情報や特徴について記述できます。</p>
+                                
+                            </div>
+                            <img class="content-img" src="" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="year">2021年</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="content-wrapper">
+                                <h3>VIS</h3>
+                                <p>作品Aの説明文がここに入ります。詳細な情報や特徴について記述できます。</p>
+                                
+                            </div>
+                            <img class="content-img" src="" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="content-wrapper">
+                                <h3>ブロック崩し</h3>
+                                <p>作品Aの説明文がここに入ります。詳細な情報や特徴について記述できます。</p>
+                                
+                            </div>
+                            <img class="content-img" src="" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </main>
     </div>

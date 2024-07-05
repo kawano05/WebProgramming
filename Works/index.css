@@ -1,7 +1,9 @@
 header{
     top: 0;
     background-color: white;
+    border: 1px solid #6e6e6e33;
 }
+
 body{
     background-color: rgb(232, 240, 225);
 }
@@ -20,6 +22,14 @@ body {
 .mv .text{
     display: flex;
     
+}
+.timeline_sec .year{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin:40px;
+    font-size: 4rem;
 }
 .timeline {
     position: relative;
@@ -44,17 +54,35 @@ body {
     background-color: inherit;
     width: 50%;
 }
-
+.timeline-item {
+    opacity: 0;
+    transition: all 1s ease-out;
+    will-change: opacity, transform;
+}
+.timeline-item.fade-in {
+    opacity: 1;
+    transform: translateX(0) scale(1) !important;
+}
+.timeline-item.fade-out {
+    opacity: 0;
+}
+  /* 左右の方向クラス */
+.from-left {
+    transform: translateX(-100px) scale(0.5);
+}
+.from-right {
+    transform: translateX(100px) scale(0.5);
+}
 .timeline-item::after {
     content: '';
     position: absolute;
     width: 25px;
-    height: 25px;
+    height: 0px;
     background-color: white;
-    border: 4px solid #FF9F55;
+    border: 3px solid #050505;
     top: 15px;
-    border-radius: 50%;
     z-index: 1;
+    transform: none;
 }
 
 
@@ -64,7 +92,7 @@ body {
 }
 
 .timeline-item:nth-child(odd)::after {
-    right: -17px;
+    right: -15px;
 }
 
 /* 偶数番目の項目（右側） */
@@ -73,7 +101,7 @@ body {
 }
 
 .timeline-item:nth-child(even)::after {
-    left: -17px;
+    left: -15px;
 }
 
 .timeline-content {
@@ -119,4 +147,10 @@ body {
 .Container{
     margin-top: 70px;
     margin-left: 76px;
+}
+
+.content-img{
+    margin-top: 30px;
+    width: 200px;
+    aspect-ratio:3/4;
 }
