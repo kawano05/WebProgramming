@@ -6,7 +6,7 @@ mark,menu,nav,object,ol,p,pre,q,samp,section,tfoot,th,thead,time,tr,
 ul,var,video{
     border: 0;
     font-family: sans-serif;
-    line-height: 1;
+    line-height: 1.5;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -77,7 +77,7 @@ body{
   .breadcrumb li:first-child a:before {
     /*家アイコン*/
     font-family: FontAwesome;
-    content: '\f015';
+    content: '⌂';
     font-weight: normal;
     font-size: 1.1em;
     color: #2e7fea;

@@ -73,7 +73,7 @@ body {
 .from-right {
     transform: translateX(100px) scale(0.5);
 }
-.timeline-item::after {
+/* .timeline-item::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -83,8 +83,21 @@ body {
     top: 15px;
     z-index: 1;
     transform: none;
+} */
+.timeline-bar span{
+    position: relative;
 }
-
+.timeline-bar span::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 0px;
+    background-color: white;
+    border: 3px solid #050505;
+    z-index: 1;
+    transform: none;
+    left: calc(45.65vw);
+}
 
 /* 奇数番目の項目（左側） */
 .timeline-item:nth-child(odd) {
