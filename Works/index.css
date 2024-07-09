@@ -52,7 +52,8 @@ body {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 100%;
+    display: flex;
 }
 .timeline-item {
     opacity: 0;
@@ -98,8 +99,8 @@ body {
     transform: none;
     left: calc(45.65vw);
 }
-
-/* 奇数番目の項目（左側） */
+/*
+/* 奇数番目の項目（左側） 
 .timeline-item:nth-child(odd) {
     left: 0;
 }
@@ -108,7 +109,7 @@ body {
     right: -15px;
 }
 
-/* 偶数番目の項目（右側） */
+/* 偶数番目の項目（右側） 
 .timeline-item:nth-child(even) {
     left: 50%;
 }
@@ -116,15 +117,29 @@ body {
 .timeline-item:nth-child(even)::after {
     left: -15px;
 }
-
-.timeline-content {
+*/
+.text-content {
     padding: 20px 30px;
+    width: 47%;
     background-color: rgba(255, 255, 255, 0.8);
     position: relative;
     border-radius: 6px;
     overflow: hidden;
-}
 
+}
+.img-content{
+    padding: 20px 30px;
+    width: 47%;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.timeline-item :nth-child(1){
+    margin-right: 3%;
+}
+.timeline-item :nth-child(2){
+    margin-left: 3%;
+}
 .background-image {
     position: absolute;
     top: 0;
@@ -143,20 +158,26 @@ body {
     position: relative;
     z-index: 1;
 }
+.image-warapper{
+    position: relative;
+    display: inline-block;
+}
 
 /* パララックス効果のための追加スタイル */
 .timeline-item {
     perspective: 1000px;
 }
 
-.timeline-content {
+.text-content {
     transform-style: preserve-3d;
     transition: transform 0.3s ease-out;
+
 }
 /* 右側の項目のコンテンツを右寄せにする */
-.timeline-item:nth-child(even) .timeline-content {
+.timeline-item:nth-child(even) .text-content {
     text-align: right;
 }
+
 .Container{
     margin-top: 70px;
     margin-left: 76px;
@@ -164,6 +185,38 @@ body {
 
 .content-img{
     margin-top: 30px;
-    width: 200px;
-    aspect-ratio:3/4;
+    width: 100%;
+}
+.image-wrapper .content-img{
+    width: 60%;
+    margin: 0;
+    opacity: 0.8;
+    position: absolute;
+}
+
+/* .image-wrapper .content-img:first-child{
+    top: 0;
+    left: 40%;
+}
+
+.image-wrapper .content-img:last-child{
+    bottom: 0;
+    left: 0;
+} */
+
+.timeline-item :nth-child(1) .image-wrapper .content-img:first-child{
+    top:10%;
+    right: 40%;
+}
+.timeline-item :nth-child(1) .image-wrapper .content-img:last-child{
+    bottom: 0;
+    right: 0;
+}
+.timeline-item :nth-child(2) .image-wrapper .content-img:first-child{
+    top: 10%;
+    left: 40%;
+}
+.timeline-item :nth-child(2) .image-wrapper .content-img:last-child{
+    bottom: 0;
+    left: 0;
 }

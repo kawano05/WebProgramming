@@ -6,7 +6,7 @@ mark,menu,nav,object,ol,p,pre,q,samp,section,tfoot,th,thead,time,tr,
 ul,var,video{
     border: 0;
     font-family: sans-serif;
-    line-height: 1.5;
+    line-height: 1;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -86,3 +86,7 @@ body{
   .breadcrumb li a:hover {
     text-decoration: underline;
   }
+
+.non-line-height{
+  line-height: 1;
+}
