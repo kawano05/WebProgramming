@@ -130,6 +130,9 @@ h3{
 .Xd{
     background-image: url(./img/xd-original.svg);
 }
+i p{
+    font-size: 2rem;
+}
 .VisualStudio{
     background-image: url(./img/visualstudio-original.svg);
 }
