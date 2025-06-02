@@ -80,3 +80,25 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  const modal = document.getElementById('imageModal');
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const enlargedImage = document.getElementById('enlargedImage');
+        const closeBtn = document.querySelector('.close');
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.onclick = function() {
+                modal.style.display = "block";
+                enlargedImage.src = this.src;
+            }
+        });
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
