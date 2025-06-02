@@ -18,6 +18,9 @@ ul,var,video{
     transition: .3s cubic-bezier(.4,.4,0,1);
     word-spacing: 1px;
 }
+i{
+    background-size: contain;
+}
 .openbtn span{
     display: inline-block;
     transition: all .4s;
@@ -154,6 +157,9 @@ i p{
 }
 .Facebook{
     background-image: url(./img/facebook-original.svg);
+}
+.Python{
+    background-image: url(./img/python-svgrepo-com.svg)
 }
 
 header p{
